@@ -12,3 +12,7 @@ function requestPokeInfo(url, name){
 }
 
 requestPokeInfo(baseURL, 'pikachu')
+
+console.log("test")
+
+
