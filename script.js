@@ -13,6 +13,6 @@ function requestPokeInfo(url, name){
 
 requestPokeInfo(baseURL, 'pikachu')
 
-console.log("test")
-
+console.log("test122")
+let test = 1;
 
