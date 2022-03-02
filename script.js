@@ -1,18 +1,23 @@
 const baseURL = "https://pokeapi.co/api/v2/pokemon/"
 
-let pokemon;
+let poke = 1;
+requestPokeInfo(baseURL, 'pikachu')
 
 function requestPokeInfo(url, name){
     fetch(url + name)
-        .then(response => response.json())
+        .then(response =>{
+            console.log(response)
+            return response.json()
+        })
         .then(data => {
+            document.body.innerHTML = data.name
+            poke = data
             console.log(data)
         })
         .catch(err => console.log(err))
 }
 
-requestPokeInfo(baseURL, 'pikachu')
 
-console.log("test122")
-let test = 1;
+
+
 
